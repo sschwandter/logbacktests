@@ -1,0 +1,5 @@
+Run Main.class once with root logger level set to INFO. I got around 0.1s on my system
+Then set level to DEBUG - on my system it took 4s.
+
+It might be not much in absolute terms, but it's still an around 40x slow down.
+It gets a bit better if there are no string substitutions, but still 3+ seconds.
