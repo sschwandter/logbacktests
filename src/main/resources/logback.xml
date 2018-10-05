@@ -1,0 +1,16 @@
+<configuration scan="true" scanPeriod="10 seconds">
+	<!-- Use -Dlogback.configurationFile=/path/to/this/file to tell logback where to find this configuration file -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%-10.10thread] [%-14.14X{request}] %highlight(%3.-3level %40.40logger{35}) - %cyan(%msg) %n</pattern>
+		</encoder>
+	</appender>	
+	
+	<logger name="com.cybertrap" level="INFO" />
+	<logger name="connectionMonitor" level="WARN" />	
+
+	<root level="DEBUG">
+		<!--<appender-ref ref="STDOUT" />-->
+	</root>
+
+</configuration>
