@@ -11,13 +11,13 @@ public class Main {
 
         Logger logger = LoggerFactory.getLogger(Main.class);
 
-        long start = System.nanoTime();
         int param1 = 4;
         int param2 = 5;
+
+        long start = System.nanoTime();
         for (int i=0; i< RUNS; i++) {
             logger.debug("Test {} {}", param1, param2);
         }
         System.out.printf("Time elapssed:%sseconds%n", (double) (System.nanoTime() - start) / (double) 1_000_000_000);
-
     }
 }

@@ -6,10 +6,7 @@
 		</encoder>
 	</appender>	
 	
-	<logger name="com.cybertrap" level="INFO" />
-	<logger name="connectionMonitor" level="WARN" />	
-
-	<root level="DEBUG">
+	<root level="INFO">
 		<!--<appender-ref ref="STDOUT" />-->
 	</root>
 
